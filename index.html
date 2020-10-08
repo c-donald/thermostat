@@ -3,6 +3,7 @@
 
 <head>
     <script src="./src/thermostat.js"></script>
+    <link rel="stylesheet" href="./src/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./src/interFace.js"></script>
     <title>Thermostat</title>
@@ -12,8 +13,8 @@
 <body>
     <section>
         <h1>Thermostat</h1>
-        <h2 id='temperature'></h2>
-        <h3 id='power-saving-status'></h3>
+        <h2> Inside temperature: <span id="temperature"></span></h2>
+        <h3> Power save on? <span id="power-saving-status"></span></h3>
         <h4 id='energy-usage'></h4>
         <button id='show-usage'>ShowEnergyUsage</button>
         <p>
@@ -25,7 +26,7 @@
         </p>
     </section>
     <section>
-        <h1>Current temperature: <span id="current-temperature">20</span></h1>
+        <h1>Current temperature in: <span id="current-temperature">20</span></h1>
         <form id="select-city">
             <input id="current-city" type="text" placeholder="Enter a city"></input>
             <input type="submit"></input>

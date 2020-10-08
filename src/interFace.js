@@ -5,10 +5,12 @@ $(document).ready(function () {
     $('#temperature-up').on('click', function () {
         thermostat.up();
         $('#temperature').text(thermostat.temperature)
+        $('#energy-usage').text(thermostat.energyUsage());
     });
     $('#temperature-down').on('click', function () {
         thermostat.down();
         $('#temperature').text(thermostat.temperature)
+        $('#energy-usage').text(thermostat.energyUsage());
     });
     $('#temperature-reset').on('click', function () {
         thermostat.resetTemperature();
@@ -23,9 +25,7 @@ $(document).ready(function () {
         thermostat.turnOffPowerSaveMode();
         $('#power-saving-status').text(thermostat.powerSaveMode)
     });
-    $('#show-usage').on('click', function () {
-        $('#energy-usage').text(thermostat.energyUsage());
-    });
+
 
     displayWeather('London');
 

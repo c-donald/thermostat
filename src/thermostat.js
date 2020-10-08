@@ -59,10 +59,10 @@ class Thermostat {
         if (this.temperature < this.MEDIUM_USAGE_LIMIT) {
             return 'Low-Usage';
         }
-        if (this.temperature < this.HIGH_USAGE_LIMIT) {
+        else if (this.temperature < this.HIGH_USAGE_LIMIT) {
             return 'Medium-Usage';
         }
-        if (this.temperature > this.HIGH_USAGE_LIMIT) {
+        else if (this.temperature > this.HIGH_USAGE_LIMIT) {
             return 'High-Usage';
         }
 

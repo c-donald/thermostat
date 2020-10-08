@@ -22,4 +22,8 @@ $(document).ready(function () {
         thermostat.turnOffPowerSaveMode();
         $('#power-saving-status').text(thermostat.powerSaveMode)
     });
+    $('#show-usage').on('click', function () {
+        $('#energy-usage').text(thermostat.energyUsage());
+    });
 });
+
